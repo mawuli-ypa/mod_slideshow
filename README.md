@@ -14,25 +14,30 @@ This module uses the [ResponsiveSlides] Javascript library.
 * Add images to the category
 * Add "js/responsiveslides.js" and "css/responsiveslides.css" libraries to your template file.
 
+    ````
     {% lib
          "css/responsiveslides.css"
          "js/responsiveslides.js"
     %}
-
+    ````
 
 * Then use ``{% slideshow category=category_id html_tag=slideshow_html_tag %}``
   For example:
 
+    ````
     {% slideshow category="news_headlines_images" html_tag="demo-slides" %}
+    ````
 
 * Make sure you include the css for the slideshow , and call the plugin on the html element tag as documented on the
    [ResponsiveSlides] website. For example:
 
+    ````javascript
     <script>
       $(function() {
           $(".demo-slides").responsiveSlides();
       });
     </script>
+    ````
 
 * For more information on styling and the Javascript plugin options, visit the [ResponsiveSlides] website.
 
