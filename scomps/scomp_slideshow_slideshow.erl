@@ -20,7 +20,7 @@ render(Params, _Vars, Context) ->
                         Category -> Category
                     end,
     SlideshowTag = case proplists:get_value(html_tag, Params) of 
-                        undefined -> ?DEFAULT_SLIDESHOW_CATEGORY;
+                        undefined -> ?DEFAULT_SLIDESHOW_TAG;
                         HtmlTag -> HtmlTag
                     end,
     Html = z_template:render("slideshow.tpl", 
