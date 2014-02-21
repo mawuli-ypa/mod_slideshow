@@ -31,13 +31,13 @@ This module uses the [ResponsiveSlides] Javascript library.
 * Make sure you include the css for the slideshow , and call the plugin on the html element tag as documented on the
    [ResponsiveSlides] website. For example:
 
-    ````javascript
-    <script>
-      $(function() {
-          $(".demo-slides").responsiveSlides();
-      });
-    </script>
-    ````
+```javascript
+<script>
+  $(function() {
+      $(".demo-slides").responsiveSlides();
+  });
+</script>
+```
 
 * For more information on styling and the Javascript plugin options, visit the [ResponsiveSlides] website.
 
